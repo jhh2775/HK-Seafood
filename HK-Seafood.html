@@ -134,9 +134,53 @@ body {
        Thursday  10:30AM - 9:00PM
        Saturday  10:30AM - 9:00PM </pre>
     </h2>
+<<<<<<< HEAD
     <div class="fakeimg" style="height:60px;"> 
       
    
+=======
+        <title>Add Map</title>
+
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://www.google.com/maps/place/hK+Seafood+and+Wings/@29.5959484,-95.467243,15z/data=!4m5!3m4!1s0x0:0x63df20aad502354a!8m2!3d29.5959482!4d-95.4672425"
+      async
+    ></script>
+  </body>
+
+>>>>>>> parent of 6c3879b (Update HK-Seafood.html)
     <br></br>
     <h3>Popular Items</h3>
     <p>Fish and Shrimp Platter</p>
