@@ -79,13 +79,28 @@ body {
   padding: 20px;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
+/* side Images */
+.wrapperS { 
+	width: 100%; 
+	height: 200px; 
+	position: relative; 
+} 
+ 
+.wrapperS img { 
+	width: 100%; 
+	height: 100%; 
+} 
+ 
+.wrapperS a { 
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+	display: block; 
+	color: black;
+	font-style: bold;
+	font-size: 15px;
+} 	
+	
 /* Footer */
 .footer {
   padding: 20px;
@@ -160,8 +175,8 @@ body {
 
     <h3>Popular Items</h3>
     <p>Fish and Shrimp Platter</p>
-    <div>
-	<img src="https://i.pinimg.com/originals/b3/8b/35/b38b358c46fb8af6262cea0da2177b83.jpg", width = '100%', height = '100'>
+    <div class="wrapperS">
+	<img src="https://i.pinimg.com/originals/b3/8b/35/b38b358c46fb8af6262cea0da2177b83.jpg", width = '100%', height = '100'>Fish and Shrimp Platter
 	  </div>    
     <p>Shrimp Fried Rice</p>
     <div>
