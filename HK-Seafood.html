@@ -138,10 +138,10 @@ body {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: black;
-  display: none;
-  padding: 100px 10px;
-  height: 100%;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
 }
 
 </style>
@@ -161,31 +161,7 @@ body {
 <button class="tablink" onclick="openPage('Contact', this, '#F75D59')">Contact</button>
 
 <div id="Home" class="tabcontent">
-	
-	</div>
-</div>
-
-<div class="footer">
-  <h2>Footer</h2>
-</div>
-
-
-<div id="Menu" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p> 
-</div>
-
-<div id="Specials" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
-</div>
-
-<div class="row">
+	<div class="row">
 		<div class="side">
 			<h3>Address: 5834 S. Post Oak Rd, Houston, TX 77053 </h3>
 			<h2><pre>Hours: Sunday    Closed
@@ -232,6 +208,29 @@ body {
       				<a href="https://clarksvillenow.sagacom.com/files/2019/10/JuicySeafood6-1-e1602262461477.jpg">BURGERS & WINGS</a>    
 	  			</div>
   			</div>
+
+	</div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+
+<div id="Menu" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Specials" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
 
 <script>
 function openPage(pageName,elmnt,color) {
